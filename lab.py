@@ -75,10 +75,3 @@ def plot(dataset, alpha, beta, prediction, day):
 
     plt.show()
 
-def test():
-    filtered_data = read_and_filter('data.csv', 11)
-    fixed_data = fix_deformation(filtered_data)
-    alpha, beta, prediction = fit_and_predict(fixed_data, 2700)
-    plot(fixed_data, alpha, beta, prediction, 2700)
-
-test()
